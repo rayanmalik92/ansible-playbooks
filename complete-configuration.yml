@@ -1,0 +1,10 @@
+---
+- name: Complete configuration
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - role: user_management
+    - role: package_installation
+    - role: service_management
