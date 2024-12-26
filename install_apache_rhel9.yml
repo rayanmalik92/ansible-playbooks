@@ -1,6 +1,6 @@
 ---
 - name: Install and start Apache on RHEL 9 EC2 instance
-  hosts: rhel9_ec2
+  hosts: all
   become: yes
   tasks:
     - name: Install Apache (httpd) package
